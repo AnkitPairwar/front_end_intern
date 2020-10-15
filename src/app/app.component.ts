@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'short-task';
+  
+  //will identify if the user is logged in or not
+  login_status: boolean;
 }

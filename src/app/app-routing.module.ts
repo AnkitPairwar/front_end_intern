@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
+import { NonLoginComponent } from './nonlogin';
 import { AccountsComponent } from './accounts';
 
 
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: '' , component : HomeComponent },
   {path: 'login' , component : LoginComponent },
   {path: 'accounts' , component : AccountsComponent },
+  {path: 'nonlogin' , component : NonLoginComponent },
   
   //otherwise redirect to home page
   {path: '**' , component : HomeComponent},

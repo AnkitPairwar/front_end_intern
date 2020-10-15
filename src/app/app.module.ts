@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { LoginComponent } from './login/login.component';
+import { NonLoginComponent } from './nonlogin/nonlogin.component';
 
 
 
@@ -13,6 +14,7 @@ import { LoginComponent } from './login/login.component';
   declarations: [
     AppComponent,
     LoginComponent,
+    NonLoginComponent,
     AccountsComponent,
     HomeComponent
 
