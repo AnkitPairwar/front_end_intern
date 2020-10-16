@@ -1,7 +1,11 @@
 //Handles the routing of the project
-
+//bootstrap module
 import { NgModule } from '@angular/core';
+
+//router module
 import { Routes, RouterModule } from '@angular/router';
+
+//components
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { NonLoginComponent } from './nonlogin';
