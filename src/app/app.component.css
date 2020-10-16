@@ -1,0 +1,20 @@
+*{
+  margin: 0px;  
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 130px auto;
+    
+}
+
+.logo-app{
+    display: flex;
+    align-items: center;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+}
+

@@ -1,3 +1,20 @@
-Hey
-HI
-<router-outlet></router-outlet>
+
+<!--injecting code from navbar-->
+<app-navbar> </app-navbar>
+
+<!--Heading for each page-->
+
+<div class="container">
+    <div class="logo-app" >
+        <img src="../assets/logo_sample2.png" 
+        alt="logo"
+        height="100px"
+        width="130px">
+    </div>
+    <div class="heading">
+        <h2>SHORT TASK</h2>
+    </div>
+</div>
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
