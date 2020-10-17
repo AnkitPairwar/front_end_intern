@@ -1,0 +1,28 @@
+.container-non{
+    margin: 2rem;
+    display: grid;
+
+}
+
+.container-non h4{
+    background-color: #512e80;
+    margin:auto;
+    color: whitesmoke;
+
+}
+
+.container-non .paragraph{
+    
+    margin-top: auto;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex: .3 ;    
+    height: auto;
+    align-content: space-around;
+}
+
+.container-non .paragraph p{
+    margin: 2em;
+    background-color: #512e80;
+}
