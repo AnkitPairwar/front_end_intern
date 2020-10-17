@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { NonLoginComponent } from './nonlogin/nonlogin.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './elements/navbar/navbar.component';
+import { LoggedinComponent } from './loggedin/loggedin.component';
 
 
 
@@ -19,7 +20,8 @@ import { NavbarComponent } from './elements/navbar/navbar.component';
     NonLoginComponent,
     AccountsComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoggedinComponent
 
   ],
   imports: [

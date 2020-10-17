@@ -1,20 +1,25 @@
+<div class="app-container">
 
-<!--injecting code from navbar-->
-<app-navbar> </app-navbar>
+    <!--injecting code from navbar-->
+    <app-navbar> </app-navbar>
 
-<!--Heading for each page-->
+    <!--Heading for each page-->
 
-<div class="container">
-    <div class="logo-app" >
-        <img src="../assets/logo_sample2.png" 
-        alt="logo"
-        height="100px"
-        width="130px">
+    <div class="container">
+        <div class="logo-app" >
+            <img src="../assets/logo_sample2.png" 
+            alt="logo"
+            height="100px"
+            width="130px">
+        </div>
+  
+        <div class="heading">
+            <h2>SHORT TASK</h2>
+        </div>
     </div>
-    <div class="heading">
-        <h2>SHORT TASK</h2>
+  
+    <div class="content">
+        <router-outlet></router-outlet>
     </div>
-</div>
-<div class="content">
-    <router-outlet></router-outlet>
+
 </div>
