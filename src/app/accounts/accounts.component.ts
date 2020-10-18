@@ -5,5 +5,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./accounts.component.css']
 })
 
-export class AccountsComponent {
+export class AccountsComponent  {
+
+//ngDoCheck()
+
 }
+
+

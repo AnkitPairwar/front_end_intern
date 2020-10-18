@@ -11,8 +11,10 @@
 
 }
 
-.container-non .paragraph{
-    
+
+.jumbotron{
+        
+    background-color: teal;
     margin-top: auto;
     color: whitesmoke;
     display: flex;
@@ -22,7 +24,7 @@
     align-content: space-around;
 }
 
-.container-non .paragraph p{
-    margin: 2em;
-    background-color: #512e80;
+p{
+    margin: 5vh;
+    
 }

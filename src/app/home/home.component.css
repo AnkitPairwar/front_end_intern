@@ -1,15 +1,25 @@
+*{
+    color: whitesmoke;
+    
+}
+
+
 .container-home{
     display: grid;
-    grid-template-rows: 50% 50%;
+    place-content: center;    
 }
 
 .h3{
     display: flex;
     align-items: center;
 
+
 }
 
 .clickables{
     display: flex;
     align-items: center;
+    
 }
+
+
