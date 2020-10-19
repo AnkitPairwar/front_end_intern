@@ -1,17 +1,26 @@
+.row{
+    margin:2em;
+}
+
 .col-sm-8{
     color:teal;
 
 }
 
 .col-sm-4{
-    color: teal;
+    color: xteal;
+    display: grid;
+    place-content: center;
 }
+
+
 
 form{
     color: whitesmoke;      
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    display: grid;
+    place-content: center ;
+    margin-left: 1em;
     
     height: 38vh;
     width: 35vh;
@@ -36,4 +45,9 @@ ul{
 
 li{
     padding: 5px ;
+}
+
+#right{
+    display: grid;
+    place-content: center;
 }

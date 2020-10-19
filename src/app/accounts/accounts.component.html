@@ -28,7 +28,7 @@
     <div class="col-sm-4">  
         <form [formGroup]='photoForm'>
             <div class="form-group">
-              <label for="exampleFormControlFile1">Example file input</label>
+              <label for="exampleFormControlFile1">USER IMAGE</label>
               <input type="file" class="form-control-file" id="exampleFormControlFile1">
             </div>
           </form>     
@@ -36,7 +36,7 @@
     
 </div>
 
-<div class="row">
+<div class="row" id="right">
 
     <div class="col align-self-center">
         <div  *ngIf="noChange; else elseBlock">
