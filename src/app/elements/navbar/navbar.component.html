@@ -1,18 +1,55 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      
+      <!--if /login is the current url-->
+      
+      <ul *ngIf="urlCur === '/login'" class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" routerLink="/account">Profile</a>
         </li>
-        
       </ul>
+
+      <!--if /accounts is the current url-->
       
+      <ul *ngIf="urlCur === '/accounts'" class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/nonlogin">Non Login Page</a>
+        </li>
+      </ul>
+
+      <!--if /nonlogin is the current url-->
+    
+      <ul *ngIf="urlCur === '/accounts'" class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li *ngIf="login_status" class="nav-item">
+          <a class="nav-link" routerLink="/accounts">Profile</a>
+        </li>
+      </ul>
+
+      <!--if /loggedin is the current url-->
+    
+      <ul *ngIf="urlCur === '/loggedin'" class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/nonlogin">Non Login <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/accounts">Profile</a>
+        </li>
+      </ul>
+
+
     </div>
   </nav>

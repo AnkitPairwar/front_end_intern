@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
 })
 
 export class LoggedinComponent {
+  temperature:number;
+  windSpeed:number;
+  humidity:number;
+  airQuality:number;
+
+
 }

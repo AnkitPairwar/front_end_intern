@@ -1,0 +1,35 @@
+
+.jumbotron{
+        
+    background-color: #4b084d;
+    margin-top: auto;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex: .3 ;    
+    height: auto;
+    align-content: space-around;
+}
+
+.weather{
+    
+    background-color: teal;      
+    display: flex;
+    flex-direction: column;
+    background-color: teal;
+    height: 25vh;
+    width: 30vh ;
+    box-shadow: -1px 4px 20px 6px rgba(0, 0, 0, 0.75) ;
+}
+
+p{
+    margin-left: 5vh;
+        
+    display: flex;
+    flex-direction: column;
+    background-color: teal;
+    height: 50vh;
+    width: 50vh;
+    box-shadow: -1px 4px 20px 6px rgba(0, 0, 0, 0.75) ;
+    
+}

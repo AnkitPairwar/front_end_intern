@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//for observables
 
 @Component({
   selector: 'app-root',
@@ -6,8 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'short-task';
   
+  
+  title = 'short-task';
+ 
+
+
   //will identify if the user is logged in or not
-  login_status: boolean;
+  login_status:boolean=false;
 }

@@ -1,30 +1,34 @@
 .container-non{
-    margin: 2rem;
     display: grid;
-
+    place-content: center;
+    ;
+    margin: 10px;
 }
 
 .container-non h4{
-    background-color: #512e80;
-    margin:auto;
+    background-color: teal; 
     color: whitesmoke;
+    box-shadow: -1px 4px 20px 6px rgba(0, 0, 0, 0.75) ;   
 
 }
 
 
 .jumbotron{
         
-    background-color: teal;
+    background-color: #4b084d;
     margin-top: auto;
     color: whitesmoke;
     display: flex;
-    flex-direction: row;
-    flex: .3 ;    
-    height: auto;
-    align-content: space-around;
+
+
 }
 
 p{
-    margin: 5vh;
-    
+    display: grid;
+    place-content: center;
+    margin: 2vh;
+    height: 33vh ;
+    width: 33vh;
+    background-color: teal;
+    box-shadow: -1px 4px 20px 6px rgba(0, 0, 0, 0.75) ;   
 }
