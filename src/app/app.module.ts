@@ -1,16 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+
+// components imports
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { LoginComponent } from './login/login.component';
 import { NonLoginComponent } from './nonlogin/nonlogin.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavbarComponent } from './elements/navbar/navbar.component';
 import { LoggedinComponent } from './loggedin/loggedin.component';
 
+import { NavbarComponent } from './elements/navbar/navbar.component';
+
+//Module imports
+import { AppRoutingModule } from './app-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,7 +32,8 @@ import { LoggedinComponent } from './loggedin/loggedin.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
