@@ -16,7 +16,7 @@ import { NavbarComponent } from './elements/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
-
+import { ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

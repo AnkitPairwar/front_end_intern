@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { filter } from 'rxjs/operators';
 import { Router ,NavigationEnd} from '@angular/router';
+
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -24,14 +26,15 @@ export class NavbarComponent implements OnInit{
     ).subscribe(event => 
    {
       this.dataurl = event;
-   });
+      this.urlCur = this.dataurl.url;
+
+    });
   }
 
   //onint class
   ngOnInit(): void {
-    //will hold the current url
-    this.urlCur = this.dataurl.url;    
+    //will hold the current url    
   }
-
+  
 
 }
