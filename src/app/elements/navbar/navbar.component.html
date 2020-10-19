@@ -13,7 +13,7 @@
           <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/account">Profile</a>
+          <a class="nav-link" routerLink="/accounts">Profile</a>
         </li>
       </ul>
 
@@ -30,7 +30,7 @@
 
       <!--if /nonlogin is the current url-->
     
-      <ul *ngIf="urlCur === '/accounts'" class="navbar-nav mr-auto">
+      <ul *ngIf="urlCur === '/nonlogin'" class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
         </li>
