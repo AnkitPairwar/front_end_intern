@@ -8,16 +8,15 @@ import { FormBuilder , FormGroup} from '@angular/forms';
 
 export class LoginComponent implements OnInit {
 
-  login_form : FormGroup;
+  loginForm : FormGroup;
 
   constructor(private _fb: FormBuilder){}
 
   ngOnInit(){
-    this.login_form = this._fb.group({
+    this.loginForm = this._fb.group({
       username: '',
       password:''
-
     });
-    this.login_form.valueChanges.subscribe(console.log);
+    //this.login_form.valueChanges.subscribe(console.log);
   }
 }

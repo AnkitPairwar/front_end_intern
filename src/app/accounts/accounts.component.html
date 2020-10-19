@@ -1,20 +1,51 @@
 <div class="row">
-    <div class="col-sm-6">
-        <form [formGroup="details_form"]>
+    <div class="col-sm-8">
+        <form [formGroup]="deatilsForm">
+
+        <ul>
+        <li>                
             <input type="name" class="form-control" 
-            id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="name">
+            id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="name"
+            placeholder="NAME">
+        </li>
             
+        <li>
             <input type="email" class="form-control" 
-            id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="gender">
-            
+            id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="gender"
+            placeholder="GENDER">
+        </li>
+        <li>
             <input type="email" class="form-control" 
-            id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
-            
-
-
+            id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email"
+            placeholder="E_MAIL">
+        </li>
+        <li>
+            SUBSCRIPTION EXPIRY DATE: {{date}}
+        </li>
+        </ul>
         </form>
     </div>
-    <div class="col-sm-4">    
+    <div class="col-sm-4">  
+        <form [formGroup]='photoForm'>
+            <div class="form-group">
+              <label for="exampleFormControlFile1">Example file input</label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+          </form>     
+    </div>
+    
+</div>
+
+<div class="row">
+
+    <div class="col align-self-center">
+        <div  *ngIf="noChange; else elseBlock">
+            <button type="button" class="btn btn-secondary" routerLink="/homr">LOGOUT</button>
+        </div>
+        <ng-template #elseBlock>
+            <button type="button" class="btn btn-secondary" (click)='Submit()' >SUBMIT</button>
+        </ng-template>
+           
     </div>
     
 </div>

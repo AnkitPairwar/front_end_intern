@@ -9,18 +9,52 @@ import { FormBuilder,FormGroup } from '@angular/forms';
 
 export class AccountsComponent implements OnInit {
 
-  details_form : FormGroup;
+  deatilsForm : FormGroup;
+  photoForm:FormGroup;
+  
+  date:Date = new Date();
+  noChange:boolean = true;
+
 
   constructor(private _fb: FormBuilder){}
 
   ngOnInit(){
-    this.details_form = this._fb.group({
+    this.deatilsForm = this._fb.group({
       name: '',
       gender:'',
-      email:''
+      email:'',
+      expiry_date:this.date
     });
-    this.details_form.valueChanges.subscribe(console.log);
+    this.deatilsForm.valueChanges.subscribe(
+      x => {
+        this.noChange = false;
+      } 
+    );
+
+    this.photoForm = this._fb.group({
+      imageUrl:''
+    });
+    this.photoForm.valueChanges.subscribe(
+      x=>{
+        this.noChange=false;
+      }
+
+    )
+    
+  
   }
+
+  Change(){
+    this.noChange=false;
+  }
+
+  Submit(){
+    this.noChange=true;
+    this.ngOnInit();
+  }  
+
+  
+  
 }
 
 
