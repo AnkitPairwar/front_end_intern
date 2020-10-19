@@ -1,24 +1,29 @@
- <div class="jumbotron">
-    <div class="weather">  
-        <h5>Weather Data</h5>
-        <ul>
-            <li>
-                Temp:  {{ temperature}}C  
-            </li>
-            <li>
-                Wind Speed:   {{ windSpeed}} kmph
-            </li>
-            <li>
-                Humidity:   {{ humidity}} hg
-            </li>
-            
-        </ul>
+<div class="row">
+    <div class="col-3 col-sm-3"></div>
+    <div class="col-4 col-sm-5">
+        <p class="lead"> 
+            Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. 
+            Totam, quam iste! Aut totam pariatur 
+            doloremque sequi dolores praesentium, 
+            quasi fugit harum voluptates quibusdam quis. 
+            Magnam autem assumenda iste beatae reiciendis?</p>
     </div>
-    <p class="lead"> 
-        Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. 
-        Totam, quam iste! Aut totam pariatur 
-        doloremque sequi dolores praesentium, 
-        quasi fugit harum voluptates quibusdam quis. 
-        Magnam autem assumenda iste beatae reiciendis?</p>
-</div>
+    <div class="col-6 col-sm-4"></div>
+   
+    <div class="col-5 col-sm-4" id="weather">
+            <h5>Weather Data</h5>
+            <ul>
+                <li>
+                    Temp:  {{ temperature}}C  
+                </li>
+                <li>
+                    Wind Speed:   {{ windSpeed}} kmph
+                </li>
+                <li>
+                    Humidity:   {{ humidity}} hg
+                </li>
+                
+            </ul>
+    </div>
+  </div>

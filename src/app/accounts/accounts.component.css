@@ -1,7 +1,27 @@
-.col-sm-4{
+.col-sm-6{
     color:teal;
 }
 
 .col-sm-4{
     color: teal;
+}
+form{
+    color: whitesmoke;      
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #512e80;
+    height: 38vh;
+    width: 35vh;
+    box-shadow: -1px 4px 20px 6px rgba(0, 0, 0, 0.75) ;
+  
+}
+
+.form-group{
+    margin-top: 2vh;
+
+}
+
+.btn .btn-primary{
+    margin-top: 2vh;
 }
