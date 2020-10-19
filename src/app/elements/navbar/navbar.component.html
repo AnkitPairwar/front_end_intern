@@ -50,6 +50,14 @@
         </li>
       </ul>
 
+        <!--if /home is the current url-->
+      
+        <ul *ngIf="urlCur === '/'" class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            Home 
+          </li>
+        </ul>
+
 
     </div>
   </nav>

@@ -11,6 +11,7 @@
 
 #weather{
     
+    margin-left: 1em;
     background-color: teal;      
     display: flex;
     flex-direction: column;
