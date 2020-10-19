@@ -3,23 +3,33 @@
     
 }
 
+#heading{
+    margin-top: -100px ;
+}
 
-.container-home{
+#clickables{
+    margin-top: 100px;
+}
+
+.container{
     display: grid;
     place-content: center;    
 }
 
-.h3{
+.row .h3{
     display: flex;
     align-items: center;
 
-
 }
 
-.clickables{
+.col-sm-4{
     display: flex;
     align-items: center;
-    
+    margin-top: 1em;    
 }
 
+.btn {
+    width: 15em;
+    height: 3em;
+}
 

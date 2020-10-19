@@ -1,11 +1,12 @@
-.container-non{
+#heading{
     display: grid;
     place-content: center;
-    ;
     margin: 10px;
+    margin-top: 2em;
 }
 
-.container-non h4{
+#heading h4{
+
     background-color: teal; 
     color: whitesmoke;
     box-shadow: -1px 4px 20px 6px rgba(0, 0, 0, 0.75) ;   
@@ -13,10 +14,10 @@
 }
 
 
-.jumbotron{
+#paragraph{
         
     background-color: #4b084d;
-    margin-top: auto;
+    margin-top: 2em;
     color: whitesmoke;
     display: flex;
 

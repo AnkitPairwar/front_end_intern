@@ -5,7 +5,7 @@
 .container{
     display: flex;
     align-items: center;
-    grid-template-columns: 130px auto;
+
 }
 
 .logo-app{
@@ -19,15 +19,15 @@
 }
 
 
-.content{
+.col-sm-9{
     display: grid;
     place-items: center;
     margin-top: 5vh;
     margin-left: 5vh ;
     background-color: #4b084d;
-    height: 70vh;
-    width: 100vh;
     box-shadow: -1px 4px 20px 6px rgba(0, 0, 0, 0.75) ;
+    height: 70vh;
+    width: 140vh;
 }
 
 
