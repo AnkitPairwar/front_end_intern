@@ -12,11 +12,15 @@ import { LoggedinComponent } from './loggedin/loggedin.component';
 
 import { NavbarComponent } from './elements/navbar/navbar.component';
 
+//MATERIAL UI IMPORTS
+import {MatButtonModule} from '@angular/material/button';
+
 //Module imports
 import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule} from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,9 @@ import { ReactiveFormsModule} from '@angular/forms';
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
